@@ -8,7 +8,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
     background: #f3f3f3;
     font-family: Arial, sans-serif;
     color: #333300;
@@ -27,7 +26,9 @@ body {
 }
 
 header {
-    background-color: #b9e937;
+    /*background-color: #b9e937;*/
+    background-image: url("img/header.png");
+    background-color: #cccccc;
 }
 
 footer {
@@ -64,11 +65,12 @@ header, footer {
     grid-row-start: 1; grid-column-start: 3;
     text-align: right;
     padding: 10px 10px 0 0;
+    color: #fff;
 }
 
 .sign-in-up a {
     text-decoration: none;
-    color: #333300;
+    color: #fff;
 }
 
 nav {

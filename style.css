@@ -129,6 +129,14 @@ nav {
     height: 30px;
 }
 
+.main {
+    grid-column: span 3;
+    color: #333300;
+    /*text-align: center;*/
+    padding: 0 0 0 10px;
+    height: 30px;
+}
+
 .item {
     padding: 20px;
     border: 1px solid #ddd;

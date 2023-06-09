@@ -7,20 +7,20 @@
     <title>Welcome to Galway</title>
 </head>
 <body>
-<div class="container">
+<section class="container">
     <header>
-        <div class="header-container">
+        <section class="header-container">
             <div class="logo">
                 <a href="index.html"><h1>Welcome to Galway</h1></a>
             </div>
 <!--            <div class="sign-in-up">-->
 <!--                <a href="#">Sign In</a> | <a href="#">Sign Up</a>-->
 <!--            </div>-->
-        </div>
+        </section>
     </header>
 
     <nav>
-        <div class="nav-container">
+        <section class="nav-container">
             <ul class="navigation">
 <!--                <li class="search-destination">-->
 <!--                    <span>&#x1F50D;</span>-->
@@ -30,33 +30,46 @@
                 <li><a href="attractions.html">Attractions</a></li>
                 <li><a href="local-cuisine.html">Local Cuisine</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
-                <li><a href="events.html">Events in Galway</a></li>
+                <li><a href="events.html">Events</a></li>
             </ul>
-        </div>
+        </section>
     </nav>
-    <div class="headline"><h1>About Galway</h1></div>
-
-    <div class="main">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </div>
+    <section class="headline">
+        <h1>Welcome to Galway - The City of Tribes</h1>
+    </section>
+    <main>
+        <article>
+            <p>Brimming with culture, charm, and a unique sense of fun, Galway is a gem nestled on the rugged western coast of Ireland. Known as the "City of Tribes," this vibrant city is a blend of ancient tradition and avant-garde spirit, bound to captivate the heart of every visitor.</p>
+            <br>
+            <p>From the colourful, cobbled streets lined with traditional pubs and eclectic shops in the Latin Quarter, to the richly historic city walls and the Spanish Arch, Galway offers a distinctive fusion of the old and new. It's a city steeped in history yet full of life and modern Irish culture.</p>
+            <br>
+            <p>For the nature enthusiasts, Galway serves as a gateway to some of Ireland's most picturesque landscapes - from the serene Lough Corrib and Connemara's sprawling moors, to the dramatic Cliffs of Moher and the enchanting Aran Islands.</p>
+            <br>
+            <p>Whether you're a foodie in search of the freshest seafood and local delicacies, a history buff eager to explore medieval architecture, or an adventurer ready to tackle the Wild Atlantic Way, Galway has it all. It's no wonder it was named a European Capital of Culture in 2020!</p>
+            <br>
+            <p>Take a digital stroll through our website to discover more about Galway's enchanting history, top attractions, delectable cuisine, and much more. We're sure you'll find plenty of reasons to fall in love with Galway and start planning your visit today.</p>
+            <br>
+            <br>
+            <p><strong>Galway - where every visitor feels like a local, and every local has a story to share.</strong></p>
+        </article>
+    </main>
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-social">
-                <img id="instagram-icon" alt="instagram" src="img/icons8-instagram.svg">
-                <img id="facebook-icon" alt="facebook" src="img/icons8-facebook.svg">
-            </div>
-            <div class="footer-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
+        <section class="footer-container">
+            <section class="footer-social">
+                <a href="#"><img id="instagram-icon" alt="instagram icon" src="img/icons8-instagram.svg"></a>
+                <a href="#"><img id="facebook-icon" alt="facebook icon" src="img/icons8-facebook.svg"></a>
+            </section>
+            <section class="footer-text">
+                <p>© <span id="footer-year-span">2023</span> Galway Tourism Board. All rights reserved.</p>
+                <p>Address: 123 Main St, Galway, Ireland | Phone: +123-456-7890 | Email: info@galwaytourism.ie</p>
+                <p>Visit Galway responsibly and help us maintain our beautiful city and its vibrant culture.</p>
+                <p>Website designed and developed by Eldar Sieitablaiev.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+            </section>
+        </section>
     </footer>
-</div>
+</section>
+<script>document.getElementById("footer-year-span").write( new Date().getFullYear() );</script>
 </body>
 </html>

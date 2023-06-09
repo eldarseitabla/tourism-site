@@ -61,17 +61,17 @@ header, footer {
     color: #fff;
 }
 
-.sign-in-up {
-    grid-row-start: 1; grid-column-start: 3;
-    text-align: right;
-    padding: 10px 10px 0 0;
-    color: #fff;
-}
+/*.sign-in-up {*/
+/*    grid-row-start: 1; grid-column-start: 3;*/
+/*    text-align: right;*/
+/*    padding: 10px 10px 0 0;*/
+/*    color: #fff;*/
+/*}*/
 
-.sign-in-up a {
-    text-decoration: none;
-    color: #fff;
-}
+/*.sign-in-up a {*/
+/*    text-decoration: none;*/
+/*    color: #fff;*/
+/*}*/
 
 nav {
     grid-column: span 3;
@@ -89,22 +89,22 @@ nav {
     float: left;
 }
 
-.search-destination input {
-    padding: 0 0 0 30px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    height: 30px;
-}
-.search-destination {
-    float: left;
-    border: none;
-}
-.search-destination span {
-    position: absolute;
-    margin-left: 15px;
-    margin-top: 15px;
-}
+/*.search-destination input {*/
+/*    padding: 0 0 0 30px;*/
+/*    margin: 10px;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    height: 30px;*/
+/*}*/
+/*.search-destination {*/
+/*    float: left;*/
+/*    border: none;*/
+/*}*/
+/*.search-destination span {*/
+/*    position: absolute;*/
+/*    margin-left: 15px;*/
+/*    margin-top: 15px;*/
+/*}*/
 
 .navigation a {
     display: block;

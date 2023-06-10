@@ -185,6 +185,28 @@ nav {
     margin: auto;
 }
 
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form .form-control {
+    width: 30em;
+    margin-bottom: 1em;
+}
+
+.contact-form textarea {
+    min-height: 10em;
+}
+
+.contact-form .form-control input,
+.contact-form .form-control textarea {
+    padding: 0.5em;
+}
+
 /* Tablet styles */
 @media (max-width: 768px) {
     .container {

@@ -31,9 +31,29 @@
         <h1>Contact Us</h1>
     </section>
     <main>
-
-<!-- Content -->
-
+        <section class="contact-form">
+            <form action="process.php">
+                <div class="form-control">
+                    <label for="firstName">First name</label>
+                    <input id="firstName" type="text" name="First name" />
+                </div>
+                <div class="form-control">
+                    <label for="lastName">Last name</label>
+                    <input id="lastName" type="text" name="Last name" />
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="Email" />
+                </div>
+                <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                </div>
+                <div class="form-control">
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <section class="footer-container">

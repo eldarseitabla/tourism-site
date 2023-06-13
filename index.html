@@ -9,13 +9,12 @@
 <body>
 <section class="container">
     <header>
-        <section class="header-container">
+        <section>
             <div class="logo">
-                <a href="index.html"><h1>Welcome to Galway</h1></a>
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
             </div>
-<!--            <div class="sign-in-up">-->
-<!--                <a href="#">Sign In</a> | <a href="#">Sign Up</a>-->
-<!--            </div>-->
         </section>
     </header>
 
@@ -39,16 +38,41 @@
     </section>
     <main>
         <article>
-            <p>Brimming with culture, charm, and a unique sense of fun, Galway is a gem nestled on the rugged western coast of Ireland. Known as the "City of Tribes," this vibrant city is a blend of ancient tradition and avant-garde spirit, bound to captivate the heart of every visitor.</p>
+            <section class="video-container">
+                <video controls>
+                    <source src="video/galway-intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+        </article>
+        <article>
+            <div class="home-row">
+                <p class="paragraph-flex-left">
+                    Brimming with culture, charm, and a unique sense of fun, Galway is a gem nestled on the rugged western coast of Ireland. Known as the "City of Tribes," this vibrant city is a blend of ancient tradition and avant-garde spirit, bound to captivate the heart of every visitor.
+                    From the colourful, cobbled streets lined with traditional pubs and eclectic shops in the Latin Quarter, to the richly historic city walls and the Spanish Arch, Galway offers a distinctive fusion of the old and new. It's a city steeped in history yet full of life and modern Irish culture.
+                    For the nature enthusiasts, Galway serves as a gateway to some of Ireland's most picturesque landscapes - from the serene Lough Corrib and Connemara's sprawling moors, to the dramatic Cliffs of Moher and the enchanting Aran Islands.
+                    <br><br>
+                    <img style="max-width: 630px" class="flex-item" src="img/kayaking.png" alt="kayaking">
+                </p>
+                <br>
+                <p class="paragraph-flex-right">
+                    <img style="max-width: 400px" class="flex-item" src="img/beu.png" alt="Cathedral">
+                </p>
+            </div>
             <br>
-            <p>From the colourful, cobbled streets lined with traditional pubs and eclectic shops in the Latin Quarter, to the richly historic city walls and the Spanish Arch, Galway offers a distinctive fusion of the old and new. It's a city steeped in history yet full of life and modern Irish culture.</p>
-            <br>
-            <p>For the nature enthusiasts, Galway serves as a gateway to some of Ireland's most picturesque landscapes - from the serene Lough Corrib and Connemara's sprawling moors, to the dramatic Cliffs of Moher and the enchanting Aran Islands.</p>
-            <br>
-            <p>Whether you're a foodie in search of the freshest seafood and local delicacies, a history buff eager to explore medieval architecture, or an adventurer ready to tackle the Wild Atlantic Way, Galway has it all. It's no wonder it was named a European Capital of Culture in 2020!</p>
-            <br>
-            <p>Take a digital stroll through our website to discover more about Galway's enchanting history, top attractions, delectable cuisine, and much more. We're sure you'll find plenty of reasons to fall in love with Galway and start planning your visit today.</p>
-            <br>
+            <div class="home-row">
+                <br>
+                <p class="paragraph-flex-left">
+                    <img style="max-width: 400px" src="img/cathedral.png" alt="Corrib">
+                </p>
+                <br>
+                <p class="paragraph-flex-right">
+                    Whether you're a foodie in search of the freshest seafood and local delicacies, a history buff eager to explore medieval architecture, or an adventurer ready to tackle the Wild Atlantic Way, Galway has it all. It's no wonder it was named a European Capital of Culture in 2020!
+                    Take a digital stroll through our website to discover more about Galway's enchanting history, top attractions, delectable cuisine, and much more. We're sure you'll find plenty of reasons to fall in love with Galway and start planning your visit today.
+                    <br><br>
+                    <img class="flex-item" style="max-width: 580px" src="img/henry.jpg" alt="henry">
+                </p>
+            </div>
             <br>
             <p><strong>Galway - where every visitor feels like a local, and every local has a story to share.</strong></p>
         </article>
@@ -65,11 +89,13 @@
                 <p>Address: 123 Main St, Galway, Ireland | Phone: +123-456-7890 | Email: info@galwaytourism.ie</p>
                 <p>Visit Galway responsibly and help us maintain our beautiful city and its vibrant culture.</p>
                 <p>Website designed and developed by Eldar Sieitablaiev.</p>
-                <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+<!--                <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>-->
             </section>
         </section>
     </footer>
 </section>
-<script>document.getElementById("footer-year-span").write( new Date().getFullYear() );</script>
+<script>
+    document.getElementById("footer-year-span").write( new Date().getFullYear() );
+</script>
 </body>
 </html>

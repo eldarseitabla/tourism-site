@@ -48,41 +48,21 @@ header, footer {
     height: 200px;
 }
 
-.header-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-    width: 100%;
-}
-
 .logo {
-    grid-row-start: 1; grid-column-start: 1;
-    padding: 30px 0 0 30px;
     text-align: left;
 }
-
-.logo a {
-    text-decoration: none;
-    color: #fff;
+.logo img {
+    width: 200px;
+    height: 200px;
+    animation: rotatelogo 3s linear running;
+}
+@keyframes  rotatelogo {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
 }
 
-/*.sign-in-up {*/
-/*    grid-row-start: 1; grid-column-start: 3;*/
-/*    text-align: right;*/
-/*    padding: 10px 10px 0 0;*/
-/*    color: #fff;*/
-/*}*/
-
-/*.sign-in-up a {*/
-/*    text-decoration: none;*/
-/*    color: #fff;*/
-/*}*/
-
 nav {
-    /*grid-column: span 3;*/
     background-color: #57d131;
-
     grid-row-start: 2;
     grid-column-start: 1;
     grid-row-end: 4;
@@ -98,23 +78,6 @@ nav {
 .navigation li {
     float: left;
 }
-
-/*.search-destination input {*/
-/*    padding: 0 0 0 30px;*/
-/*    margin: 10px;*/
-/*    border: none;*/
-/*    border-radius: 5px;*/
-/*    height: 30px;*/
-/*}*/
-/*.search-destination {*/
-/*    float: left;*/
-/*    border: none;*/
-/*}*/
-/*.search-destination span {*/
-/*    position: absolute;*/
-/*    margin-left: 15px;*/
-/*    margin-top: 15px;*/
-/*}*/
 
 .navigation a {
     display: block;
@@ -194,7 +157,6 @@ nav {
 }
 
 .contact-form .form-control {
-    width: 30em;
     margin-bottom: 1em;
 }
 
@@ -207,10 +169,78 @@ nav {
     padding: 0.5em;
 }
 
+.home-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.home-row > .paragraph-flex-left {
+    flex-basis: 30%;
+    height: auto;
+}
+
+.home-row > .paragraph-flex-right {
+    flex-basis: 30%;
+    height: auto;
+}
+
+.flex-item {
+    display: flex;
+}
+
+.video-container {
+    max-width: 1100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+}
+
+
+.list-vertical {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.vertical-item {
+    grid-column: span 1;
+    margin-bottom: 40px;
+}
+.vertical-item p {
+    margin: 10px 0 10px 0;
+}
+.vertical-item img {
+    max-width: 60%;
+    height: auto;
+}
+.vertical-item iframe {
+    width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1300px) {
+    .home-row {
+        display: block;
+        flex-direction: column;
+    }
+
+    .home-row img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 /* Tablet styles */
 @media (max-width: 768px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
+        gap: unset;
     }
 
     header, footer, nav {
@@ -224,6 +254,34 @@ nav {
     .navigation a {
         border: #333300 solid 1px;
         margin: 1px;
+    }
+    .list-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 1fr;
+        height: auto;
+        display: flex;
+    }
+    .footer-social {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 2;
+
+        text-align: left;
+        margin: auto;
+    }
+    .footer-text {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-row-end: 2;
+        grid-column-end: 3;
+
+        text-align: left;
+        margin: auto;
     }
 }
 
@@ -243,5 +301,33 @@ nav {
 
     .navigation li {
         float: none;
+    }
+    .list-items {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: auto;
+        display: flex;
+    }
+    .footer-social {
+        display: none;
+    }
+    .footer-text {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-row-end: 2;
+        grid-column-end: 2;
+        margin: auto;
+    }
+
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea {
+        display: flex;
+        width: 100%;
+        height: auto;
     }
 }

@@ -9,9 +9,11 @@
 <body>
 <section class="container">
     <header>
-        <section class="header-container">
+        <section>
             <div class="logo">
-                <a href="index.html"><h1>Welcome to Galway</h1></a>
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
             </div>
         </section>
     </header>
@@ -31,8 +33,11 @@
         <h1>Contact Us</h1>
     </section>
     <main>
+        <p>Please feel free to <a href="mailto:balloons@example.com">send us an email</a> if you would like to know more
+            about our products.</p>
+        <br>
         <section class="contact-form">
-            <form action="process.php">
+            <form action="process.php" novalidate>
                 <div class="form-control">
                     <label for="firstName">First name</label>
                     <input id="firstName" type="text" name="First name" />
@@ -66,10 +71,51 @@
                 <p>Address: 123 Main St, Galway, Ireland | Phone: +123-456-7890 | Email: info@galwaytourism.ie</p>
                 <p>Visit Galway responsibly and help us maintain our beautiful city and its vibrant culture.</p>
                 <p>Website designed and developed by Eldar Sieitablaiev.</p>
-                <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+<!--                <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>-->
             </section>
         </section>
     </footer>
 </section>
+<script>
+    const form = document.querySelector('form');
+
+    // Add an event listener for form submission
+    form.addEventListener('submit', function(e) {
+        // Prevent form submission
+        e.preventDefault();
+
+        // Get form inputs
+        const firstName = document.getElementById('firstName');
+        const lastName = document.getElementById('lastName');
+        const email = document.getElementById('email');
+        const message = document.getElementById('message');
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        const showMessage = (message, color) => {
+            // const removeP = document.getElementsByName('p');
+            // removeP.remove();
+
+            const pElem = document.createElement('p');
+            pElem.className = 'form-validation-message';
+            pElem.textContent = message; // string
+            pElem.style.color = color; // red | green
+            form.parentNode.insertBefore(pElem, form.nextSibling);
+        }
+
+        const oldMessage = document.querySelector('.form-validation-message');
+        if(oldMessage) {
+            oldMessage.remove();
+        }
+
+        // Validate form inputs
+        if (firstName.value === '' || lastName.value === '' || email.value === '' || message.value === '') {
+            showMessage('Please fill in all fields.', 'red');
+        } else if(!emailPattern.test(email.value)) {
+            showMessage('Email is not valid', 'red');
+        } else {
+            showMessage('Form submitted successfully!', 'green');
+        }
+    });
+</script>
 </body>
 </html>

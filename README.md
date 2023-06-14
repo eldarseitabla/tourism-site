@@ -5,7 +5,8 @@
 - Name: Eldar Sieitablaiev
 
 ## Differences from Design Plan
-- It was decided to simplify the functionality. Lead him to an information site about the city for tourists.
+- In initial requirements, the project was described as Airbnb, but then I find out that it has to be a more simple tourism website with information about a city.
+- That's why, was added link Home, Attractions, Local Cuisine, Contact Us, Events relevant pages for them and implemented all tech requirements relevant to project. 
 
 - Interactive Features Implemented:
   - Email client popup and create new letter with the addressee field filled in, when we click on link (send us an email) on Page Contact Us.

@@ -21,10 +21,6 @@
     <nav>
         <section class="nav-container">
             <ul class="navigation">
-<!--                <li class="search-destination">-->
-<!--                    <span>&#x1F50D;</span>-->
-<!--                    <input type="text" name="destination" placeholder="Destination">-->
-<!--                </li>-->
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="attractions.html">Attractions</a></li>
                 <li><a href="local-cuisine.html">Local Cuisine</a></li>
@@ -38,10 +34,9 @@
     </section>
     <main>
         <article>
-            <section class="video-container">
-                <video controls>
+            <section id="videoPlayer" class="video-container">
+                <video id="myVideo" controls="controls">
                     <source src="video/galway-intro.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
                 </video>
             </section>
         </article>
@@ -95,6 +90,14 @@
     </footer>
 </section>
 <script>
+    const player = document.getElementById('myVideo');
+    player.addEventListener('error', function() {
+        document.getElementById('videoPlayer').innerHTML = '<iframe src="https://www.youtube.com/embed/KQyfaHhdRM8" title="YouTube video player"\n' +
+            '            frameBorder="0"\n' +
+            '            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"\n' +
+            '            allowFullScreen></iframe>';
+    }, true);
+
     document.getElementById("footer-year-span").write( new Date().getFullYear() );
 </script>
 </body>

@@ -55,10 +55,15 @@ header, footer {
     width: 200px;
     height: 200px;
     animation: rotatelogo 3s linear running;
+    transition: width 2s;
 }
 @keyframes  rotatelogo {
     from { transform: rotate(360deg); }
     to { transform: rotate(0deg); }
+}
+
+.logo img:hover {
+    width: 250px;
 }
 
 nav {
